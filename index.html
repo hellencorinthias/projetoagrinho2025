@@ -1,0 +1,76 @@
+/* Estilos para a seção "Os Sabores da Terra" */
+#sabores {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#sabores h2 {
+    color: #4CAF50; /* Tom de verde mais vibrante */
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.grid-sabores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.sabor-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sabor-item:hover {
+    transform: scale(1.03);
+}
+
+.sabor-item img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: block;
+}
+
+.sabor-item h3 {
+    color: #333;
+    margin: 15px;
+    font-size: 1.2em;
+}
+
+.sabor-item p {
+    color: #666;
+    margin: 0 15px 15px;
+    line-height: 1.5;
+}
+
+.sabor-item .saiba-mais {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.sabor-item .saiba-mais:hover {
+    background-color: #388E3C; /* Tom de verde mais escuro no hover */
+}
+
+/* Media Query para telas menores */
+@media (max-width: 600px) {
+    .grid-sabores {
+        grid-template-columns: 1fr;
+    }
+}
